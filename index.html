@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин хозяйственных средств</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин Хозяйственных Средств</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="checkout.html">Оформление заказа</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="banner">
+        <h2>Лучшие средства для уборки и чистоты</h2>
+    </section>
+    
+    <section id="catalog">
+        <h2>Популярные товары</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="img/посуд.jfif" alt="Средство для мытья посуды">
+                <h3>Средство для мытья посуды</h3>
+                <p>Цена: 20 сомон.</p>
+                <button onclick="addToCart('Средство для мытья посуды', 200)">Купить</button>
+            </div>
+            <div class="product">
+                <img src="img/для кухни.jfif" alt="Чистящее средство для кухни">
+                <h3>Чистящее средство для кухни</h3>
+                <p>Цена: 30 сомон.</p>
+                <button onclick="addToCart('Чистящее средство для кухни', 300)">Купить</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Магазин Хозяйственных Средств</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

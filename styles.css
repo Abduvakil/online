@@ -1,0 +1,170 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f8f8;
+    text-decoration: underline;
+}
+
+#banner {
+    background: linear-gradient(135deg, #50e3c2, #4a90e2);
+    text-align: center;
+    padding: 60px;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 0 0 20px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+}
+
+/* Сетка товаров */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+/* Добавлено больше товаров */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-grid .product:nth-child(n+7) {
+    display: block;
+}
+
+/* Корзина */
+#cart {
+    text-align: center;
+    padding: 20px;
+}
+
+#cart-items p {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: 10px auto;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items button {
+    background: #ff4d4d;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+#cart-items button:hover {
+    background: #cc0000;
+}
+
+/* Форма заказа */
+#checkout {
+    text-align: center;
+    padding: 20px;
+}
+
+#checkout form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#checkout input {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 12px 12px 0 0;
+}
